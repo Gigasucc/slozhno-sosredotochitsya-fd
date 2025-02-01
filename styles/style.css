@@ -7,6 +7,7 @@
 }
 
 .header {
+  height: 100vh;
   margin-block-end: 4rem;
   background-image: var(--background-image);
   background-attachment: fixed;
