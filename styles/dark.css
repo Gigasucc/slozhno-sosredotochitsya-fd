@@ -10,16 +10,17 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --bg-color: #000028;
-  --main-text-color: #F1B2CE;
+  --main-text-color: #f1b2ce;
   --title-text-color: #000028;
-  --page-title-color: #DB00FF;
-  --accent-color: #FF0070;
-  --corner-color: #FF0070;
+  --page-title-color: #db00ff;
+  --accent-color: #ff0070;
+  --corner-color: #ff0070;
+  --button-color: #ff0070;
+  --section-title-color: #ff0070;
   --background-image: url(../images/cover-image-dark.png);
 }
 
 .theme-dark .page {
-
   .decorative__word {
     visibility: visible;
   }

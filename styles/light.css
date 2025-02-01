@@ -9,42 +9,44 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --bg-color: #FFF1F7;
+  --bg-color: #fff1f7;
   --main-text-color: #353430;
   --title-text-color: #353430;
-  --page-title-color: #FFC2E6;
-  --accent-color: #FF8DCB;
+  --page-title-color: #ffc2e6;
+  --accent-color: #ff8dcb;
   --corner-color: #353430;
+  --button-color: #353430;
+  --section-title-color: #353430;
   --background-image: url(../images/cover-image-light.png);
-
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --bg-color: #FFF1F7;
+    --bg-color: #fff1f7;
     --main-text-color: #353430;
     --title-text-color: #353430;
-    --page-title-color: #FFC2E6;
+    --page-title-color: #ffc2e6;
     --corner-color: #353430;
-    --accent-color: #FF8DCB;
+    --accent-color: #ff8dcb;
+    --button-color: #353430;
+    --section-title-color: #353430;
     --background-image: url(../images/cover-image-light.png);
   }
-  
+
   .decorative__word {
     visibility: hidden;
   }
 
-    /* Дублируем переменные светлой темы */    
+  /* Дублируем переменные светлой темы */
 }
 
 .theme-light .page {
-    .header__theme-menu-button {
-      color: #353430;
-    }
-
-    .section__title {
-      color: #353430;
-    /* Вам также нужно будет написать ряд подобных селекторов */
+  .header__theme-menu-button {
+    color: #353430;
   }
 
+  .section__title {
+    color: #353430;
+    /* Вам также нужно будет написать ряд подобных селекторов */
+  }
 }
