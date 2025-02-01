@@ -1,4 +1,7 @@
 /* Глобальные стили для проекта, их можно дополнять и менять по желанию */
+html {
+  font-size: 62.5%;
+}
 
 *,
 *::before,
@@ -40,3 +43,5 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+
+
