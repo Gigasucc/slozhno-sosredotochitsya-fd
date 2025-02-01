@@ -1,0 +1,1 @@
+git@github.com:Gigasucc/slozhno-sosredotochitsya-fd.git
