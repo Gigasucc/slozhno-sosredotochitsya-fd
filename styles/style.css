@@ -273,16 +273,13 @@ img {
   .header {
     padding-left: 0;
     padding-right: 2rem;
+    margin-block-end: 6rem;
+    grid-template-columns: 1fr 1fr;
   }
 
   .main__title {
     grid-column: 1 / 3;
     font-size: clamp(12rem, 14.453vw + 0.9rem, 15.7rem);
-  }
-
-  .header {
-    margin-block-end: 6rem;
-    grid-template-columns: 1fr 1fr;
   }
 
   .footer::after {
