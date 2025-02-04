@@ -11,7 +11,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 10px 10px;
+  padding: 10px 10px 0;
 }
 
 .decorated-zone {
@@ -102,7 +102,6 @@
 }
 
 .header__theme-menu {
-  padding-right: 7px;
   padding-bottom: 7px;
   display: flex;
   flex-direction: column;
@@ -117,15 +116,17 @@
 }
 
 .header__theme-menu-button {
-  background-color: transparent;
+  width: 72px;
   color: var(--button-color, #ff0070);
   border: 1px solid transparent;
+  background-color: transparent;
   text-transform: lowercase;
   cursor: pointer;
 }
 
+
 .header__theme-menu-button:hover {
-  border: 1px solid currentColor;
+  border: 1px solid var(--hover-button-borders);
 }
 
 .header__theme-menu-button:focus {
@@ -137,7 +138,7 @@
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid currentColor;
+  border: 1px solid var(--button-color, #ff0070);
   pointer-events: none;
 }
 
@@ -212,7 +213,7 @@ img {
 
 .footer {
   height: 100vh;
-  min-height: 667px;
+  min-height: 668px;
   position: relative;
   display: grid;
   place-items: center;
@@ -220,6 +221,7 @@ img {
 
 .footer .page__title {
   padding-bottom: 20px;
+  margin-bottom: 0px;
   font-weight: bold;
 }
 
@@ -231,27 +233,28 @@ img {
 }
 
 @media (width>=768px) {
-  .decorated-zone::after {
-    bottom: 40px;
-  }
 
   .page {
     width: 100%;
     max-width: 1024px;
-    padding: 20px 20px;
+    padding: 20px 20px 0;
   }
 
   .content {
-    margin-block-start: 40px;
-    margin-block-end: 70px;
+    margin-block-start: 60px;
+    margin-block-end: 80px;
   }
 
   .page__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
+  .header, .footer {
+    max-height: calc(100vh - 20px);
+  }
+
   .header .page__title {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     margin-left: -20px;
   }
 
@@ -262,7 +265,7 @@ img {
 
   .header__text {
     max-width: 50%;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
 
   .content-section:nth-child(1) {
@@ -314,9 +317,11 @@ img {
     grid-column: 2 / 4;
     grid-row: 3;
   }
+
 }
 
 @media (width>=1024px) {
+  
   .content-section:nth-child(2) {
     margin-bottom: 62px;
   }
@@ -354,7 +359,6 @@ img {
 
   .header__theme-menu-list {
     flex-direction: row;
-    gap: 23px;
   }
 
   .footer {
