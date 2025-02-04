@@ -10,26 +10,28 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --bg-color: #fff1f7;
-  --main-text-color: #353430;
-  --title-text-color: #353430;
-  --page-title-color: #ffc2e6;
-  --accent-color: #ff8dcb;
+  --title-bg-color: #ff8dcb;
+  --p-text-color: #353430;
   --corner-color: #353430;
-  --button-color: #353430;
+  --title-text-color: #353430;
   --section-title-color: #353430;
+  --accent-color: #ff8dcb;
+  --botton-color: #353430;
+  --page-title-color: #ffc2e6;
   --background-image: url(../images/cover-image-light.png);
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --bg-color: #fff1f7;
-    --main-text-color: #353430;
-    --title-text-color: #353430;
-    --page-title-color: #ffc2e6;
+    --title-bg-color: #ff8dcb;
+    --p-text-color: #353430;
     --corner-color: #353430;
+    --title-text-color: #353430;
+    --section-title-color: #353430;
     --accent-color: #ff8dcb;
     --button-color: #353430;
-    --section-title-color: #353430;
+    --page-title-color: #ffc2e6;
     --background-image: url(../images/cover-image-light.png);
   }
 
@@ -41,12 +43,5 @@
 }
 
 .theme-light .page {
-  .header__theme-menu-button {
-    color: #353430;
-  }
-
-  .section__title {
-    color: #353430;
-    /* Вам также нужно будет написать ряд подобных селекторов */
-  }
+  /* Вам также нужно будет написать ряд подобных селекторов */
 }
