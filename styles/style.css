@@ -279,7 +279,7 @@ img {
 
   .content-section:nth-child(odd) {
     display: grid;
-    grid-template-columns: min(34%) 1fr;
+    grid-template-columns: max(35%) 1fr;
   }
 
   .content-section:nth-child(odd) .text__container {
@@ -325,6 +325,10 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+  }
+
+  .content-section:nth-child(odd) {
+    grid-template-columns: max(34%) 1fr;
   }
 
   .header {
